@@ -1,4 +1,5 @@
-# LABORATORIO DE COMPUTACION III <=> HardWare King
+# LABORATORIO DE COMPUTACION III
+# HardWare King
 
 Division A132 <-> Grupo 3
 =
