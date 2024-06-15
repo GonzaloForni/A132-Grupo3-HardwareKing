@@ -1,0 +1,36 @@
+body {
+    background-color: #151F2E;
+}
+
+.box-perfil {
+    margin: 100px 25vw;
+    background-color: #151F2E;
+    padding: 20px 20px 20px 20px;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 0.05em;
+    border-color: aqua;
+}
+
+.formulario-perfil {
+    padding: 20px;
+    background-color: #10002B;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+.boton-contactar {
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+}
+
+.boton-contactar > btn {
+    width: 50px;
+}
+
+.label-perfil {
+    text-align: start;
+}

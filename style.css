@@ -1,0 +1,118 @@
+/*
+    -> Color fondo base: 151F2E
+    -> Color fondo secundario: 10002B
+*/
+
+body {
+    background-color: #151F2E;
+}
+
+/* Header */
+.card-header {
+    text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: center;
+}
+
+.barra-busqueda {
+    border-color: #10002B;
+}
+
+.boton-busqueda:hover {
+    background-color: aqua;
+}
+
+.borde-contenedor {
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 0.005em;
+    border-color: aqua;
+}
+
+/* Carousel inicio (Productos destacados)*/
+.mi-carousel {
+    margin: 30px 5vw;
+    padding: 20px;
+    background-color: #10002B;
+}
+
+.productos-destacados {
+    margin: 30px 10vw;
+    padding: 20px;
+}
+
+.card-producto {
+    text-decoration: none;
+}
+
+/* Nuestra ubicacion */
+.nuestra-ubicacion {
+    margin: 30px 15vw;
+    padding: 10px;
+    background-color: #10002B;
+}
+
+.card-ubicacion {
+    background-color: #10002B;
+    color: aqua;
+}
+
+.mapa {
+    padding: 20px;
+}
+
+.text-mapa {
+    padding: 10px;
+    text-align: end;
+}
+
+/* Footer */
+.footer-pag {
+    text-align: center;
+}
+
+.botones-footer {
+    margin: 5px;
+    text-align: end;
+    align-items: end;
+}
+
+.texto-footer {
+    color: white;
+    border-color: white;
+}
+
+.texto-redes-footer {
+    margin: 5px 1em;
+    text-align: start;
+    align-items: start;
+    color: white;
+    border-color: white;
+}
+
+.botones-redes-footer {
+    display: flex;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.footer-pag {
+    background-color: #10002B;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.hr-divisoria {
+    border-top: 2px solid aqua; /* Cambia #000 por el color que desees */
+    margin: 15px 0; /* Opcional: para añadir un margen */
+}

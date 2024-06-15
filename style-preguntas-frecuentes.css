@@ -1,0 +1,63 @@
+.acordeon-preguntas-frecuentes {
+    margin: 5vh 25vw;
+    background-color: #10002B;
+    padding: 30px;
+}
+
+.label-preguntas-frecuentes {
+    margin-bottom: 2rem;
+}
+
+/* Cambiar color del cuerpo del acordeón */
+.accordion-body {
+    background-color: #151F2E; /* Fondo del cuerpo */
+    color: white; /* Color del texto */
+}
+
+/* Cambiar color del botón del encabezado */
+.accordion-button {
+    background-color: #151F2E; /* Fondo del botón cuando no esta desplegado*/
+    color: white; /* Color del texto cuando está desplegado */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: aqua; /* Fondo del botón cuando está desplegado */
+    color: black; /* Color del texto cuando está desplegado */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Sin sombra al enfocar */
+}
+
+/* Opcional: Cambiar el color del borde del acordeón */
+.accordion-item {
+    border: 1px solid aqua; /* Color del borde del acordeón */
+}
+
+/* Opcional: Cambiar el color del icono de colapso */
+.accordion-button::after {
+    filter: invert(0.5); /* Ajustar según el color deseado */
+}
+
+/* Bordes redondeados en el contenedor del acordeón */
+.accordion {
+    border-radius: 10px; /* Ajusta el valor según el redondeado deseado */
+    border: 1px solid aqua;
+    overflow: hidden; /* Asegura que el contenido se ajuste a los bordes redondeados */
+}
+
+.box-otra-consulta {
+    margin: 5vh 25vw;
+    background-color: #10002B;
+    padding: 20px; 
+}
+
+.texto-consulta {
+    color: white;
+}
+
+.boton-consulta {
+    display: flex;
+    justify-content: flex-end; /* Justifica el contenido a la derecha */
+    align-items: center; /* Centra verticalmente el contenido */
+}

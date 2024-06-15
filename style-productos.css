@@ -1,0 +1,69 @@
+.portada {
+    display: flex;
+    justify-content: center;
+}
+
+.columna-portada {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.img-portada {
+    border: solid;
+    border-color: #151F2E;
+    border-width: 0.005em;
+    border-radius: 10px;
+}
+
+.productos-contenedor {
+    margin: 30px 5vw;
+    padding: 20px;
+    background-color: #10002B;
+}
+
+.label-productos {
+    margin: 1% -1%;
+    text-align: right; /* Alinea el título "Productos" a la derecha */
+}
+
+.label-filtros {
+    margin: 2% 2%;
+    text-align: center;
+}
+
+.filtros-productos {
+    height: 75%;
+    margin: 0% 5%;
+    background-color: #151F2E;
+    border: solid;
+    border-color: aqua;
+    border-width: 0.005em;
+    border-radius: 10px;
+}
+
+/* Asegurar que todas las cards tengan la misma altura */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajustar la altura de las imágenes y hacer que ocupen todo el ancho */
+.card-img-top {
+    height: 200px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover;
+}
+
+.img-marca {
+    width: 6.25%;
+    margin: 1px 1px;
+}
+
+.productos-contenedor, .borde-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
