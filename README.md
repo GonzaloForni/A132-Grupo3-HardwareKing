@@ -1,7 +1,6 @@
 # LABORATORIO DE COMPUTACION III
-# HardWare King
 
-Division A132 <-> Grupo 3
+Division A132 <-> Grupo 3 <-> HardWareKing
 =
 
 ### INTEGRANTES:
