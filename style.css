@@ -77,7 +77,26 @@ body {
 
 /* Footer */
 .footer-pag {
+    background-color: #10002B;
     text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Estilo para pantallas grandes: footer fijo en la parte inferior */
+@media (min-height: 769px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+/* Estilo para pantallas pequeñas: footer en posición estática */
+@media (max-height: 768px) {
+    .footer {
+        position: static;
+    }
 }
 
 .botones-footer {
@@ -102,10 +121,6 @@ body {
 .botones-redes-footer {
     display: flex;
     align-items: center; /* Centra los elementos horizontalmente */
-}
-
-.footer-pag {
-    background-color: #10002B;
 }
 
 .card-body {
