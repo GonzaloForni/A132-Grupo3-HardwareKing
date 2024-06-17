@@ -48,6 +48,11 @@
     border-color: #10002B;
 }
 
+.codigo-postal:focus {
+    background-color:#151F2E;
+    color: white;
+}
+
 .rdbtn-formas-pago {
     color: white;
 }
@@ -71,7 +76,8 @@
 
 /* ------------------------------------------------------------ Estilos botones tipo envio ------------------------------------------------------------ */
 .tipo-envio {
-    text-align: end;
+    text-align: start;
+    margin-left: 1em;
     color: aqua;
 }
 
