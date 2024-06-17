@@ -58,6 +58,11 @@
     padding-top: 20px;
 }
 
+.boton-agregar-carrito {
+    display: flex;
+    justify-content: end;
+}
+
 .contenedor-comprar-avisos {
     display: flex;
     flex-direction: column;
