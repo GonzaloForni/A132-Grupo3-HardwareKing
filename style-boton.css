@@ -180,15 +180,15 @@
   z-index: 9;
 }
 
-.button:nth-child(1) {
+.btn-instagram {
   background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045);
 }
 
-.button:nth-child(2) {
+.btn-youtube {
   background: rgb(255, 33, 33);
 }
 
-.button:nth-child(3) {
+.btn-twitter {
   background: rgb(69, 187, 255);
 }
 

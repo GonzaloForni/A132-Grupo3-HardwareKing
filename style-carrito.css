@@ -30,16 +30,13 @@
     text-align: start;
 }
 
-.img-carrito {
-    width: 7rem;
-}
-
-.prueba {
-    align-items: end;
-    justify-content: end;
+.label-precio {
     text-align: end;
 }
 
+.img-carrito {
+    width: 7rem;
+}
 
 /* ------------------------------------------------------------ Estilos botones tipo envio ------------------------------------------------------------ */
 :focus {
