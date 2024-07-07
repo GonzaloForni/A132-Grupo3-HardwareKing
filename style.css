@@ -112,15 +112,27 @@ body {
 
 .texto-redes-footer {
     margin: 5px 1em;
-    text-align: start;
-    align-items: start;
+    text-align: end;
+    align-items: end;
     color: white;
     border-color: white;
 }
 
 .botones-redes-footer {
     display: flex;
+    text-align: end;
     align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: end;
+}
+
+.boton-faq {
+    text-align: start;
+}
+
+.boton-volver {
+    display: flex;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
 }
 
 .card-body {

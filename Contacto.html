@@ -15,8 +15,9 @@
 
     <link rel="stylesheet" href="style-fuentes.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-contactos.css">
+    <link rel="stylesheet" href="style-contacto.css">
     <link rel="stylesheet" href="style-boton.css">
+    <link rel="stylesheet" href="style-login.css">
 </head>
 <body>
     <!-- Header -->
@@ -64,31 +65,38 @@
     </nav>
     <br><br>
 
-    <!-- Deberia mostrar los datos en una seccion y en otra permitirle dejarnos un msj -->
     <div class="box-formulario">
         <h2 class="label-contacto chakra-petch-regular">Contactanos</h2>
         <form action="" class="formulario-contacto">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Username">
-                <span class="input-group-text">·</span>
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Server">
+            <div class="inputbox">
+                <input required="required" type="text">
+                <span>Nombre</span>
+                <i></i>
             </div>
 
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Correo electronico" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            <div class="inputbox">
+                <input required="required" type="text">
+                <span>Apellido</span>
+                <i></i>
             </div>
 
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">011</span>
-                <input type="text" class="form-control" placeholder="Numero de telefono" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="inputbox">
+                <input required="required" type="text">
+                <span>Correo Electronico</span>
+                <i></i>
+            </div>
+
+            <div class="inputbox">
+                <input required="required" type="text">
+                <span>Numero de telefono</span>
+                <i></i>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text box-mensaje">Dejanos tu mensaje</span>
+                <textarea class="form-control box-mensaje" aria-label="With textarea"></textarea>
             </div>
                     
-            <div class="input-group">
-                <span class="input-group-text">Dejanos tu mensaje</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-
             <div class="boton-contactar">
                 <button class="ui-btn">
                     <span>
@@ -103,7 +111,17 @@
     <footer class="footer">
         <div class="card footer-pag">
             <div class="card-body row">
-                <div class="col">
+                <div class="col-4 boton-faq">
+                    <a href="#" class="">Sobre nosotros</a><br>
+                    <a href="Preguntas-Frecuentes.html" class="">Preguntas frecuentes</a><br>
+                    <a href="#" class="">Terminos y condiciones</a>
+                </div>
+                <div class="col boton-volver">
+                    <a href="#" class="Btn">
+                        <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+                    </a>
+                </div>
+                <div class="col-4 texto-footer">
                     <div class="texto-redes-footer">
                         Nuestras Redes
                     </div>
@@ -167,15 +185,6 @@
                             </button>
                         </a>
                     </div>
-                </div>
-                <div class="col texto-footer text-center">
-                    <h6>Copyright 2024</h6>
-                    <h6>FAQ</h6>
-                </div>
-                <div class="col botones-footer">
-                    <a href="Preguntas-Frecuentes.html" class="">Preguntas frecuentes</a>
-                    <br>
-                    <a href="#" class="">Terminos y condiciones</a>
                 </div>
             </div>
         </div>

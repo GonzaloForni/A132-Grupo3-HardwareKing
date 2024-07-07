@@ -18,7 +18,6 @@ body {
     background-color: #10002B;
     border-style: solid;
     border-radius: 10px;
-
 }
 
 .boton-contactar {
@@ -33,4 +32,16 @@ body {
 
 .label-contacto {
     text-align: start;
+}
+
+.box-mensaje {
+    background-color: #10002B;
+    color: #8f8f8f;
+    border-color: aqua;
+}
+
+.box-mensaje:focus {
+    background-color: aqua;
+    color: black;
+    border-color: aqua;
 }

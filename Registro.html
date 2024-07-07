@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Img Iconos\corona.png">
     <title>HardwareKing</title>
-
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <!-- Google fonts -->
@@ -14,10 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style-boton.css">
     <link rel="stylesheet" href="style-fuentes.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-preguntas-frecuentes.css">
+    <link rel="stylesheet" href="style-boton.css">
+    <link rel="stylesheet" href="Style-registro.css">
 </head>
 <body>
     <!-- Header -->
@@ -32,9 +32,9 @@
                     <li class="nav-item">
                         <a href="Carrito.html" class="button-navbar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" class="icon-navbar">
-                              <circle r="1" cy="21" cx="9"></circle>
-                              <circle r="1" cy="21" cx="20"></circle>
-                              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                <circle r="1" cy="21" cx="9"></circle>
+                                <circle r="1" cy="21" cx="20"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                             </svg>
                         </a>
                     </li>
@@ -44,7 +44,7 @@
                     <li class="nav-item">
                         <a href="index.html"  class="button-navbar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon-navbar">
-                              <path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path>
+                                <path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path>
                             </svg>
                         </a>
                     </li>
@@ -54,7 +54,7 @@
                     <li class="nav-item">
                         <a href="Perfil.html" class="button-navbar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon-navbar">
-                              <path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"></path>
+                                <path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"></path>
                             </svg>
                         </a>
                     </li>
@@ -65,86 +65,55 @@
     </nav>
     <br><br>
 
-    <!-- Muestro las preguntas frecuentes -->
-    <div class="acordeon-preguntas-frecuentes borde-contenedor">
-        <h2 class="label-preguntas-frecuentes chakra-petch-regular">Preguntas frecuentes</h2>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Realizar un pedido
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><code>¿Cómo puedo realizar un pedido?</code> Para realizar un pedido, navega por nuestro catálogo y selecciona los productos que deseas comprar. Añádelos a tu carrito de compras y, cuando estés listo, haz clic en el ícono del carrito para proceder con el pago. Sigue los pasos indicados para completar tu información de envío y pago.</div>
-                </div>
+    <!-- Registrarse -->
+    <div class="box-perfil">
+        <h2 class="label-perfil chakra-petch-regular">Perfil</h2>
+        <form action="" class="formulario-perfil">
+            <div class="input-group mb-3">
+                <span class="input-group-text span-perfil" id="basic-addon1">Nombre</span>
+                <input type="text" id="input-nombre" class="form-control  span-perfil input-perfil" aria-label="Username" aria-describedby="basic-addon1" required="required">
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Precios
-                </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><code>¿Los precios incluyen impuestos?</code> Sí, todos nuestros precios incluyen el IVA (Impuesto al Valor Agregado) aplicable. No hay costos ocultos; lo que ves es lo que pagas.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Formas de pago
-                </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><code>¿Qué formas de pago aceptan?</code> Aceptamos una variedad de métodos de pago para tu comodidad, incluyendo tarjetas de crédito y débito (Visa, MasterCard, American Express), PayPal, transferencias bancarias y pagos en efectivo a través de servicios locales.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Envios
-                </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><code>¿Realizan envíos a todo el país?</code> Sí, realizamos envíos a todo el territorio nacional. Los costos de envío y los tiempos de entrega pueden variar según la ubicación. Puedes calcular el costo de envío y el tiempo estimado de entrega en el carrito de compras antes de completar tu pedido.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    Facturacion
-                </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><code>¿Cómo obtengo una factura de mi compra?</code> Al completar tu pedido, recibirás una factura electrónica en el correo electrónico que proporcionaste durante el proceso de compra. Si necesitas una factura impresa o tienes alguna solicitud especial, por favor contacta a nuestro servicio de atención al cliente.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                    Garantia
-                </button>
-                </h2>
-                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><code>¿Los productos tienen garantía?</code> Sí, todos nuestros productos cuentan con garantía del fabricante. La duración y los términos de la garantía varían según el producto y el fabricante. Para más información específica sobre la garantía de un producto, consulta la página del producto o contáctanos directamente.</div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Alguna otra consulta -->
-    <div class="box-otra-consulta borde-contenedor">
-        <div class="row">
-            <div class="texto-consulta col-md-8">
-                <h3>Alguna otra consulta?</h3>
-                <h6>Dejanos tu consulta personalizada!</h6>
+            <div class="input-group mb-3">
+                <span class="input-group-text span-perfil" id="basic-addon1">Apellido</span>
+                <input type="text" id="input-apellido" class="form-control span-perfil input-perfil" aria-label="Username" aria-describedby="basic-addon1" required="required">
             </div>
-            <div class="boton-consulta col-md-4">
-                <a href="Contacto.html" class="ui-btn">
-                    <span>Contactanos</span>
-                </a>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text span-perfil" id="basic-addon1">Correo Electronico</span>
+                <input type="email" id="input-correo" class="form-control span-perfil input-perfil" aria-label="Username" aria-describedby="basic-addon1" required="required">
             </div>
-        </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text span-perfil" id="basic-addon1">Telefono</span>
+                <input type="tel" id="input-telefono" class="form-control span-perfil input-perfil" aria-label="Username" aria-describedby="basic-addon1" required="required">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text span-perfil" id="basic-addon1">Direccion</span>
+                <input type="text" id="input-direccion" class="form-control span-perfil input-perfil" aria-label="Username" aria-describedby="basic-addon1" required="required">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text span-perfil" id="basic-addon1">D.N.I</span>
+                <input type="text" id="input-dni" class="form-control span-perfil input-perfil" aria-label="Username" aria-describedby="basic-addon1" required="required">
+            </div>
+
+            <hr class="hr-divisoria">
+
+            <div class="input-group mb-3">
+                <span class="input-group-text span-perfil" id="basic-addon1">Contraseña</span>
+                <input type="password" id="input-contrasenia" class="form-control span-perfil input-perfil" aria-label="Username" aria-describedby="basic-addon1" required="required">
+            </div>
+
+            <hr class="hr-divisoria">
+            
+            <div class="boton-registrarse">
+                <button type="button" class="ui-btn" onclick="ControllerCrearCuenta()">
+                    <span>Crear Cuenta</span>
+                </button>
+            </div>
+        </form>
     </div>
 
     <!-- Footer -->
@@ -153,6 +122,7 @@
             <div class="card-body row">
                 <div class="col-4 boton-faq">
                     <a href="#" class="">Sobre nosotros</a><br>
+                    <a href="Preguntas-Frecuentes.html" class="">Preguntas frecuentes</a><br>
                     <a href="#" class="">Terminos y condiciones</a>
                 </div>
                 <div class="col boton-volver">
@@ -228,7 +198,8 @@
             </div>
         </div>
     </footer>
-
+    
+    <script src="./Scripts/Registro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

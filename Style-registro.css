@@ -20,13 +20,13 @@ body {
     border-radius: 10px;
 }
 
-.boton-perfil {
+.boton-registrarse {
     display: flex;
     justify-content: end;
     margin-top: 1rem;
 }
 
-.boton-perfil > btn {
+.boton-registrarse > btn {
     width: 50px;
 }
 
