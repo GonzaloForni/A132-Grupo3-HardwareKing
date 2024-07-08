@@ -25,7 +25,8 @@
 
 .label-productos {
     margin: 1% -1%;
-    text-align: right; /* Alinea el título "Productos" a la derecha */
+    text-align: right;
+    /* Alinea el título "Productos" a la derecha */
 }
 
 .label-filtros {
@@ -52,7 +53,8 @@
 
 /* Ajustar la altura de las imágenes y hacer que ocupen todo el ancho */
 .card-img-top {
-    height: 200px; /* Ajusta esta altura según tus necesidades */
+    height: 200px;
+    /* Ajusta esta altura según tus necesidades */
     object-fit: cover;
 }
 
@@ -61,9 +63,25 @@
     margin: 1px 1px;
 }
 
-.productos-contenedor, .borde-contenedor {
+.productos-contenedor,
+.borde-contenedor {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 10px;
+}
+
+.swiffy-slider {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container>li {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider-container>li>img {
+    border-radius: 10%;
 }
