@@ -67,43 +67,45 @@
 
     <div class="box-formulario">
         <h2 class="label-contacto chakra-petch-regular">Contactanos</h2>
-        <form action="" class="formulario-contacto">
+        <form action="https://formsubmit.co/b6c2d4845b416d1983559027d285f93d" method="POST" class="formulario-contacto">
             <div class="inputbox">
-                <input required="required" type="text">
+                <input required="required" type="text" name="Nombre">
                 <span>Nombre</span>
                 <i></i>
             </div>
 
             <div class="inputbox">
-                <input required="required" type="text">
+                <input required="required" type="text" name="Apellido">
                 <span>Apellido</span>
                 <i></i>
             </div>
 
             <div class="inputbox">
-                <input required="required" type="text">
+                <input required="required" type="text" name="Correo Electronico">
                 <span>Correo Electronico</span>
                 <i></i>
             </div>
 
             <div class="inputbox">
-                <input required="required" type="text">
+                <input required="required" type="text" name="Telefono">
                 <span>Numero de telefono</span>
                 <i></i>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text box-mensaje">Dejanos tu mensaje</span>
-                <textarea class="form-control box-mensaje" aria-label="With textarea"></textarea>
+                <textarea class="form-control box-mensaje" aria-label="With textarea" name="Mensaje"></textarea>
             </div>
                     
             <div class="boton-contactar">
-                <button class="ui-btn">
+                <button class="ui-btn" type="submit">
                     <span>
                         Enviar
                     </span>
                 </button>
             </div>
+
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
 

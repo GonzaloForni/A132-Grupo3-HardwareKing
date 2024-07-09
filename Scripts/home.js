@@ -22,18 +22,14 @@ listaProductos = [ // Tengo que cargar los datos por codigo
 document.addEventListener('DOMContentLoaded', function() {
     console.log('El documento HTML ha sido completamente cargado y analizado');
 
-    CargarListaProductos(listaProductos);
+    CargarProductosDestacados(listaProductos);
 
-    // Obtener todos los elementos <a> con la clase "card-producto"
-    var enlaces = document.querySelectorAll("a.card-producto");
-
-    // Agregar el manejador de eventos a cada elemento <a>
-    enlaces.forEach(function(enlace) {
+    var enlaces = document.querySelectorAll("a.card-producto"); // Obtengo todos los elementos <a> con la clase "card-producto"
+    enlaces.forEach(function(enlace) { // Agregar el manejador de eventos a cada elemento <a>
         enlace.addEventListener("click", handleClick);
     });
 });
 
-// Función que se llamará cuando se haga clic en un elemento <a>
 function handleClick(event) {
     event.preventDefault(); // Prevenir la acción por defecto del enlace
     var elemento = event.currentTarget; // Obtener el elemento que disparó el evento
@@ -58,25 +54,16 @@ function DeterminarProductoPorId(id) {
     return productoEncontrado;
 }
 
-function CargarListaProductos(listaProductos) {
+function CargarProductosDestacados(listaProductos) {
     // Evaluo si esta aplicado algun filtro
     for(var producto of listaProductos) {
-        AgregarNuevoProducto(producto);
+        if(producto.esDestacado == true) {
+            AgregarProductoDestacado(producto);
+        }
     }
 }
 
-// <a href="" class="card-producto">
-//  <div class="col">
-//     <div class="card">
-//         <img src="" class="card-img-top" alt="...">
-//         <div class="card-body">
-//            <h5 class="card-title"></h5>
-//             <p class="card-text"></p>
-//         </div>
-//     </div>
-//  </div>
-// </a>
-function AgregarNuevoProducto(datosProducto) {
+function AgregarProductoDestacado(datosProducto) {
     // Crear el enlace <a>
     var enlace = document.createElement("a");
     enlace.href = "Producto.html";
@@ -110,7 +97,7 @@ function AgregarNuevoProducto(datosProducto) {
     // Crear el párrafo <p>
     var parrafo = document.createElement("p");
     parrafo.className = "card-text";
-    parrafo.innerText = "$" + datosProducto.precio;
+    parrafo.innerText = datosProducto.precio;
 
     // Anidar los elementos correctamente
     divCardBody.appendChild(titulo);
@@ -121,8 +108,7 @@ function AgregarNuevoProducto(datosProducto) {
     enlace.appendChild(divCol);
 
     // Agregar el nuevo elemento al contenedor
-    var contenedor = document.getElementById("contenedor");
+    var contenedor = document.getElementById("contenedor-productos-destacados");
   
     contenedor.appendChild(enlace);
 }
-

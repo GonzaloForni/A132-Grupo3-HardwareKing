@@ -32,8 +32,8 @@ function AveriguarProductoSeleccionado() {
 function CargarDatosProductoSeleccionado(producto) {
     document.getElementById("img-producto").src = producto.imagen; // img id="img-producto"
     document.getElementById("titulo-producto").innerText = producto.nombre; // h3 id="titulo-producto"
-    document.getElementById("precio-producto").innerText = producto.precio; // p id="precio-producto
-    document.getElementById("cuotas-producto").innerText = "$" + producto.precio/12; // p id="cuotas-producto
+    document.getElementById("precio-producto").innerText = "$" + producto.precio; // p id="precio-producto
+    document.getElementById("cuotas-producto").innerText = "$" + ((producto.precio/12).toFixed(2)); // p id="cuotas-producto
     document.getElementById("descripcion-producto").innerText = producto.descripcion; // div id="descripcion-producto
 }
 

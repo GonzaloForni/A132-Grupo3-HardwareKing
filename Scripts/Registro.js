@@ -8,9 +8,10 @@ function ControllerCrearCuenta() {
         const jsonString = JSON.stringify(datosUsuario);
         console.log(jsonString);
         
-        // Guardo los datos en el localStorage
-        localStorage.setItem(datosUsuario.correoElectronico, jsonString);
-        location.reload();
+        localStorage.setItem(datosUsuario.correoElectronico, jsonString); // Guardo los datos en el localStorage
+        sessionStorage.setItem(datosUsuario.correoElectronico, 'Logeado'); // Lo seteo como un usuario logeado
+
+        window.location.href = 'Perfil.html';
     }
 }
 
