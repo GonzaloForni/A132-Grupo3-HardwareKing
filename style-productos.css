@@ -52,7 +52,8 @@
     margin: 1px 1px;
 }
 
-.productos-contenedor, .borde-contenedor {
+.productos-contenedor,
+.borde-contenedor {
     display: flex;
     flex-wrap: wrap;
     padding: 25px;
@@ -64,6 +65,21 @@
     background-color: #10002B;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 10px;
+}
+
+.swiffy-slider {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container>li {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider-container>li>img {
+    border-radius: 10%;
 }

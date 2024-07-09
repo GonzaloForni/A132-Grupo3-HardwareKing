@@ -56,12 +56,16 @@ body {
 }
 
 .card-producto {
+    display: flex;
     text-decoration: none;
 }
 
-/* Ajustar la altura de las imágenes y hacer que ocupen todo el ancho */
-.card-img-top {
-    height: 275px; /* Ajusta esta altura según tus necesidades */
+.card {
+    height: 100%;
+}
+
+.card>img {
+    aspect-ratio: 4/4;
     object-fit: cover;
 }
 
@@ -132,7 +136,8 @@ body {
 .botones-redes-footer {
     display: flex;
     text-align: end;
-    align-items: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
     justify-content: end;
 }
 
@@ -142,7 +147,8 @@ body {
 
 .boton-volver {
     display: flex;
-    align-items: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
     justify-content: center;
 }
 
@@ -151,6 +157,8 @@ body {
 }
 
 .hr-divisoria {
-    border-top: 2px solid aqua; /* Cambia #000 por el color que desees */
-    margin: 15px 0; /* Opcional: para añadir un margen */
+    border-top: 2px solid aqua;
+    /* Cambia #000 por el color que desees */
+    margin: 15px 0;
+    /* Opcional: para añadir un margen */
 }
