@@ -48,10 +48,21 @@ body {
 .productos-destacados {
     margin: 30px 10vw;
     padding: 20px;
+    background-color: #10002B;
+}
+
+.label-productos-destacados {
+    margin-bottom: 20px;
 }
 
 .card-producto {
     text-decoration: none;
+}
+
+/* Ajustar la altura de las imágenes y hacer que ocupen todo el ancho */
+.card-img-top {
+    height: 275px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover;
 }
 
 /* Nuestra ubicacion */

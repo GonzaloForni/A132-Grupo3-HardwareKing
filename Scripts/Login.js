@@ -31,6 +31,7 @@ function ControllerIniciarSesion() {
                 // Si la contraseña de ambos es igual le permito iniciar sesion y deberia guardar ese usuario en el sessionStorage
                 if(datosUsuario.password === datosInicioSesion.contrasenia) {
                     alert("El inicio de sesion se realizo con exito!");
+
                     // setear ese usuario en la sesion actual (guardar correo, y un bool de si esta log)
                     sessionStorage.setItem(datosInicioSesion.correoElectronico, 'Logeado');
                     // Deberia redirigirlo al home

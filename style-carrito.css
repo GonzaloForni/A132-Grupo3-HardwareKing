@@ -63,6 +63,19 @@
     margin-bottom: 1rem;
 }
 
+.cantidad-seleccionada {
+    justify-content: end;
+}
+
+.selector-cant {
+    background-color: #10002B;
+    color: white;
+    border-color: #151F2E;
+    border-style: solid 2px;
+    border-radius: 20px;
+    text-align: end;
+}
+
 .boton-comprar {
     display: flex;
     justify-content: end;
@@ -72,6 +85,14 @@
 
 .boton-comprar > btn {
     width: 50px;
+}
+
+.btn-eliminar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1em;
+    margin-bottom: 10px;
 }
 
 /* ------------------------------------------------------------ Estilos botones tipo envio ------------------------------------------------------------ */

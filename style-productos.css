@@ -24,23 +24,14 @@
 }
 
 .label-productos {
-    margin: 1% -1%;
-    text-align: right; /* Alinea el título "Productos" a la derecha */
+    margin: 10px 0.1em;
+    text-align: start; /* Alinea el título "Productos" a la izquierda */
 }
 
-.label-filtros {
-    margin: 2% 2%;
-    text-align: center;
-}
-
-.filtros-productos {
-    height: 75%;
-    margin: 0% 5%;
-    background-color: #151F2E;
-    border: solid;
-    border-color: aqua;
-    border-width: 0.005em;
-    border-radius: 10px;
+.boton-ordenar {
+    margin-bottom: 15px;
+    padding: 10px;
+    justify-content: end;
 }
 
 /* Asegurar que todas las cards tengan la misma altura */
@@ -52,7 +43,7 @@
 
 /* Ajustar la altura de las imágenes y hacer que ocupen todo el ancho */
 .card-img-top {
-    height: 200px; /* Ajusta esta altura según tus necesidades */
+    height: 275px; /* Ajusta esta altura según tus necesidades */
     object-fit: cover;
 }
 
@@ -62,6 +53,15 @@
 }
 
 .productos-contenedor, .borde-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.marcas-contenedor, .borde-contenedor-marcas {
+    margin: 30px 5vw;
+    padding: 20px;
+    background-color: #10002B;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

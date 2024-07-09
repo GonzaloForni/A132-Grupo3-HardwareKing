@@ -10,6 +10,7 @@ function ControllerCrearCuenta() {
         
         // Guardo los datos en el localStorage
         localStorage.setItem(datosUsuario.correoElectronico, jsonString);
+        location.reload();
     }
 }
 

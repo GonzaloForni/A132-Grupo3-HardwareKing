@@ -80,16 +80,15 @@
         <div class="producto borde-contenedor">
             <div class="producto-container">
                 <div class="contenedor-imagen-producto">
-                    <img src="Img Productos\MSI Gaming GeForce RTX 2060 Super 8GB GDRR6 256-Bit HDMI_DP G-SYNC.jpg"
-                        alt="">
+                    <img id="img-producto" src="Img Productos\MSI Gaming GeForce RTX 2060 Super 8GB GDRR6 256-Bit HDMI_DP G-SYNC.jpg" alt="">
                 </div>
                 <div class="contenedor-comprar">
                     <div class="contenedor-comprar-opciones">
-                        <h3>Placa de video MSI Gaming GeForce RTX 2060 Super 8GB GDDR6 256-Bit HDMI_DP G-SYNC</h3>
+                        <h3 id="titulo-producto">Placa de video MSI Gaming GeForce RTX 2060 Super 8GB GDDR6 256-Bit HDMI_DP G-SYNC</h3>
                         <br>
-                        <p>Precio: <b>$350.000</b></p>
+                        <p>Precio: <b id="precio-producto">$350.000</b></p>
                         <br>
-                        <p>12 cuotas sin interés de <b>$29200</b></p>
+                        <p>12 cuotas sin interés de <b id="cuotas-producto">$29200</b></p>
                         <br>
                         <div class="contenedor-comprar-avisos">
                             <p class=""> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -117,7 +116,7 @@
                         </div>
                         <br><br>
                         <div class="boton-agregar-carrito">
-                            <button class="ui-btn">
+                            <button class="ui-btn" onclick="AgregarProductoAlCarrito()">
                                 <span>
                                     Agregar al carrito
                                 </span>
@@ -127,49 +126,7 @@
                 </div>
             </div>
             <div class="detalles-producto">
-                <div>
-                    <h4>Caracteristicas generales</h4>
-                    <p>
-                        Tipo
-                        pcie
-                        Chipset Gpu
-                        RTX 2060 SUPER
-                        Entrada Video
-                        No
-                        Puente Para Sli/croosfirex
-                        -
-                        Doble Puente
-                        No
-                        Características Especiales
-                        Ray Tracing
-                    </p>
-                </div>
-                <div>
-                    <h4>Conectividad</h4>
-                    <p>
-                        Vga
-                        0
-                        Dvi Digital
-                        0
-                        Hdmi
-                        1
-                        Displayports
-                        3
-                        Usb Type-c
-                        0
-                    </p>
-                </div>
-                <div>
-                    <h4>Dimensiones</h4>
-                    <p>
-                        Ancho De La Placa
-                        131 mm
-                        Largo De La Placa
-                        241 mm
-                        Espesor De La Placa
-                        2.0 slots
-                    </p>
-                </div>
+                <p id="descripcion-producto">AMD empezó las ventas Ryzen 5 5600GT 8 de Enero 2024. Es de escritorio procesador en la arquitectura Cezanne priméramente desarrollado para sistemas de oficina. Tiene 6 núcleos y 12 flujos de datos y fabricado por la tecnología 7 nm,la frecuencia máxima es de 4600 MHz, con el miltiplicador desbloqueado. En términos de compatibilidad, este es el procesador para socket AMD Socket AM4 con TDP 65 Watt y la temperatura máxima 95 °C. Es compatible con la memoria DDR4.</p>
             </div>
         </div>
     </section>
@@ -257,6 +214,7 @@
         </div>
     </footer>
 
+    <script src="./Scripts/Producto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
