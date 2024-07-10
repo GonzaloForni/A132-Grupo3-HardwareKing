@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('El documento HTML ha sido completamente cargado y analizado');
+    console.log('El documento HTML (Producto) ha sido completamente cargado y analizado');
 
     const productoSeleccionado = AveriguarProductoSeleccionado();
     CargarDatosProductoSeleccionado(productoSeleccionado);
 
     ComprobarPrimerCargaSession();
-    console.log(sessionStorage.getItem('listaCarrito'));
 });
 
 function ComprobarPrimerCargaSession() {
@@ -23,8 +22,8 @@ function ComprobarPrimerCargaSession() {
 }
 
 function AveriguarProductoSeleccionado() {
-    const retrievedJsonString = sessionStorage.getItem('ProductoActual'); // Recuperar la cadena JSON de localStorage
-    const productoSeleccionado = JSON.parse(retrievedJsonString); // Convertir la cadena JSON de nuevo a un objeto JavaScript
+    const retrievedJsonString = sessionStorage.getItem('ProductoActual'); // Recupero la cadena JSON de localStorage
+    const productoSeleccionado = JSON.parse(retrievedJsonString); // Convierto la cadena JSON de nuevo a un objeto JavaScript
 
     return productoSeleccionado;
 }
@@ -63,7 +62,5 @@ function AgregarProductoAlCarrito() { // Una vez que el usuario clickea en agreg
 
     var listaJSONNueva = JSON.stringify(listaCarritoActual);
     sessionStorage.setItem('listaCarrito', listaJSONNueva);
-
-    alert("Se agrego el producto al carrito!!!");
     window.location.href = 'Carrito.html'; // Redirigo al usuario a la pestaña del carrito de compras
 }

@@ -1,6 +1,6 @@
 listaProductos = [ // Tengo que cargar los datos por codigo
     { id: 1, esDestacado: true, nombre: "AMD RYZEN 5 5600GT", precio: 183299, descripcion: "AMD empezó las ventas Ryzen 5 5600GT 8 de Enero 2024. Es de escritorio procesador en la arquitectura Cezanne priméramente desarrollado para sistemas de oficina. Tiene 6 núcleos y 12 flujos de datos y fabricado por la tecnología 7 nm,la frecuencia máxima es de 4600 MHz, con el miltiplicador desbloqueado. En términos de compatibilidad, este es el procesador para socket AMD Socket AM4 con TDP 65 Watt y la temperatura máxima 95 °C. Es compatible con la memoria DDR4.", stock: 100, imagen: "Img Productos/\AMD RYZEN 5 5600GT 6-Core 3_6GHZ AM4 CPU.jpg"},
-    { id: 2, esDestacado: true, nombre: "Intel Core i7", precio: 601500, descripcion: "", stock: 100, imagen: "Img Productos/\Intel Core i7.jpg"},
+    { id: 2, esDestacado: false, nombre: "Intel Core i7", precio: 601500, descripcion: "", stock: 100, imagen: "Img Productos/\Intel Core i7.jpg"},
     { id: 3, esDestacado: false, nombre: "MSI Gaming GeForce RTX 2060", precio: 489628, descripcion: "MSI Gaming GeForce RTX 2060 Super 8GB GDRR6 256-Bit HDMI_DP G-SYNC", stock: 100, imagen: "Img Productos/\MSI Gaming GeForce RTX 2060 Super 8GB GDRR6 256-Bit HDMI_DP G-SYNC.jpg"},
     { id: 4, esDestacado: true, nombre: "Gigabyte GeForce RTX 2080 Ti", precio: 633628, descripcion: "Gigabyte GeForce RTX 2080 Ti 11GB WindForce OC.", stock: 100, imagen: "Img Productos/\Gigabyte GeForce RTX 2080 Ti 11GB WindForce OC.jpg"},
     { id: 5, esDestacado: true, nombre: "Gigabyte Technology B360M AORUS", precio: 93309, descripcion: "Gigabyte Technology B360M AORUS Gaming 3 Socket 1151, Placa Base, Cranberry (GA-B360-3)", stock: 100, imagen: "Img Productos/\Gigabyte Technology B360M AORUS Gaming 3 Socket 1151, Placa Base, Cranberry (GA-B360-3).jpg"},
@@ -9,7 +9,7 @@ listaProductos = [ // Tengo que cargar los datos por codigo
     { id: 8, esDestacado: false, nombre: "MONITOR CURVO 27 SAMSUNG LC27F390FHLX LED FHD FREESYNC VGA HDMI", precio: 279900, descripcion: "Descubri una verdadera experiencia inmersiva con el monitor curvo de Samsung. Con una pantalla de 1.800R, disfrutá de un campo de visión parecido a una pantalla iMax, una gran curva con radio de 1.800 mm que crea un campo visual más amplio, mejora la profundidad y minimiza la distracción para que te concentres en tu contenido. No importa si es una película en línea, tu serie favorita de TV o un juego de carreras. La gran curva de Samsung te pondrá en el centro de tu contenido multimedia.", stock: 100, imagen: "Img Productos/\monitor-curvo-27-samsung.jpg"},
     { id: 9, esDestacado: true, nombre: "GABINETE COOLERMASTER MASTERBOX TD500 MESH V2 ARGB WHITE", precio: 150680, descripcion: "Model Number MCB-D500D-WGNN-S00 Series MasterBox Series Size Mid Tower Available Color(s) White Materials Steel, Plastic, Tempered Glass, Mesh Dimensions (L x W x H) 493 x 217 x 469mm (incl. Protrusions), 429.5 x 205x 447mm (excl. Protrusions) Weight 6.95 kg Motherboard Support Mini ITX, Micro ATX, ATX, SSI CEB, E-ATX*, (*support for up to 12 x 10.7, will limit cable management features), 1x 3.5mm Mic Jack, 1x ARGB/PWM Hub (may depend on region and model) Pre-installed Fans - Top N/A Pre-installed Fans - Front 3x 120mm 650~1800RPM SickleFlow PWM ARGB Pre-installed Fans - CPU Cooler 165mm/6.49 Clearance - PSU 180mm/7.08, 295mm/11.61 (w/ HDD cage removed)", stock: 100, imagen: "Img Productos/\gabinete-coolermaster-masterbox-white.jpg"},
     { id: 10, esDestacado: true, nombre: "WATERCOOLER 240MM CORSAIR H100 RGB", precio: 145409, descripcion: "Product Length 277mm Product Width 180mm Product Height 120mm Lighting RGB Number of Fans 2 Cold Plate Material Copper Radiator Material Aluminum Cooling Socket Support Intel 1700, Intel 1200, Intel 1150, Intel 1151, Intel 1156, AMD AM5, AMD AM4 Radiator Size 240mm iCUE Software Yes PWM Yes Weight 1.85 Fan Model SP RGB ELITE Series", stock: 100, imagen: "Img Productos/\watercooler-240mm-corsair-h100-rgb-0.jpg"},
-    { id: 11, esDestacado: false, nombre: "MICROFONO HYPERX QUADCAST USB BLACK-RED PC PS4 STREAMING 4P5P6AA", precio: 195529, descripcion: "Micrófono Sensibilidad de micrófono -36 dB Micrófono, distorción armónica total (THD) 0,05% Micrófono, impedancia de salida 32 O Micrófono, relación señal/ruido 90 dB Puertos e Interfaces Tecnología de conectividad Alámbrico Interfaz del dispositivo USB Puerto USB Si", stock: 100, imagen: "Img Productos/\microfono-hyperx-quadcast-usb-blackred.jpg"},
+    { id: 11, esDestacado: true, nombre: "MICROFONO HYPERX QUADCAST USB BLACK-RED PC PS4 STREAMING 4P5P6AA", precio: 195529, descripcion: "Micrófono Sensibilidad de micrófono -36 dB Micrófono, distorción armónica total (THD) 0,05% Micrófono, impedancia de salida 32 O Micrófono, relación señal/ruido 90 dB Puertos e Interfaces Tecnología de conectividad Alámbrico Interfaz del dispositivo USB Puerto USB Si", stock: 100, imagen: "Img Productos/\microfono-hyperx-quadcast-usb-blackred.jpg"},
     { id: 12, esDestacado: false, nombre: "MEMORIA 16GB DDR4 3200 KINGSTON FURY BEAST WHITE RGB", precio: 64339, descripcion: "Kingston FURY™ Beast DDR4 RGB Special Edition mejora tanto el rendimiento como la estética, con velocidades de hasta 3200 MT/s y 3600 MT/s, un exclusivo disipador térmico blanco y una atractiva iluminación RGB. Personaliza los efectos luminosos RGB con el software Kingston FURY CTRL™ y refuerza la atractiva estética con la patentada Infrared Sync Technology™. Disponible en latencias desde CL16 a 18, capacidades de módulo individual de 8 GB y 16 GB, y capacidades de kit de 16 GB y 32 GB. Exhaustivamente comprobadas y respaldadas por una garantía vitalicia, te resulta fácil actualizarlas en tu sistema basado en Intel® o en AMD. Con Kingston FURY™ Beast DDR4 RGB Special Edition, tú y tu sistema podrán diferenciarse del montón.", stock: 100, imagen: "Img Productos/\memoria-16gb-ddr4-3200-kingston-fury-beast-white.jpg"},
     { id: 13, esDestacado: false, nombre: "MICRO INTEL CORE I9 14900 C/VIDEO C/COOLER S1700", precio: 932630, descripcion: "El procesador Intel Core  i9-14900 Socket 1700 presenta la última arquitectura híbrida de rendimiento de Intel®, optimizada para gaming, creación de contenido y productividad. Su plataforma innovadora ofrece flexibilidad y potencia, respaldada por un conjunto robusto de herramientas de ajuste y overclocking para potenciar el rendimiento de la CPU. Con compatibilidad con los chipsets de la serie 700 de Intel® y retrocompatibilidad con los chipsets de la serie 600 de Intel®, este procesador proporciona acceso a funciones clave. Ya sea trabajando, transmitiendo, jugando o creando, los procesadores Intel® Core™ para desktop ofrecen una experiencia inmersiva incomparable.", stock: 100, imagen: "Img Productos/\micro-intel-core-i9-14900-cvideo-ccooler-s1700-0.jpg"},
     { id: 14, esDestacado: false, nombre: "GABINETE THERMALTAKE DIVIDER 170 TG 2 FAN ARGB PWM SNOW WHITE", precio: 131210, descripcion: "P/N CA-1S4-00S6WN-00 La serie Divider TIPO DE CAJA Micro Case DIMENSIONES (AL x AN x PR) 426 x 210 x 408.5 mm PESO NETO 5.26 kg PANEL LATERAL 3mm Tempered Glass x 1 Color White Material SPCC SISTEMA DE REFRIGERACIÓN Front(intake): 120 x 120 x 25 mm ARGB PWM fan (1500rpm, 27.2 dBA) x 2 BAHÍAS DE EXPANSIÓN 2 x 3.5, 2 x 2.5 or 4 x 2.5 RANURAS DE EXPANSIÓN 4 PLACAS BASE 6.7 x 6.7 (Mini ITX), 9.6 x 9.6 (Micro ATX) PUERTOS E/S USB 3.0 x 2, USB 2.0 x 1, HD Audio x 1 FUENTE DE ALIMENTACIÓN Standard PS2 PSU (optional) COMPATIBILIDAD VENTILADORES Front: 3 x 120mm, 2 x 120mm, 1 x 120mm 2 x 140mm, 1 x 140mm Top: 2 x 120mm, 1 x 120mm 2 x 140mm, 1 x 140mm Rear: 1 x 120mm COMPATIBILIDAD RADIADORES Front: 1 x 240mm, 1 x 120mm 1 x 280mm, 1 x 140mm Top: 1 x 240mm, 1 x 120mm 1 x 140mm Rear: 1 x 120mm", stock: 100, imagen: "Img Productos/\gabinete-thermaltakedivider170tg-2-fan-argb-pwm-snow-whit-0.jpg"},
@@ -20,26 +20,26 @@ listaProductos = [ // Tengo que cargar los datos por codigo
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('El documento HTML ha sido completamente cargado y analizado');
+    console.log('El documento HTML (Index )ha sido completamente cargado y analizado');
 
     CargarProductosDestacados(listaProductos);
 
     var enlaces = document.querySelectorAll("a.card-producto"); // Obtengo todos los elementos <a> con la clase "card-producto"
-    enlaces.forEach(function(enlace) { // Agregar el manejador de eventos a cada elemento <a>
+    enlaces.forEach(function(enlace) { // Agrego el manejador de eventos a cada elemento <a>
         enlace.addEventListener("click", handleClick);
     });
 });
 
 function handleClick(event) {
     event.preventDefault(); // Prevenir la acción por defecto del enlace
-    var elemento = event.currentTarget; // Obtener el elemento que disparó el evento
-    var id = elemento.id; // Obtener el id del elemento
+    var elemento = event.currentTarget; // Obtengo el elemento que disparó el evento
+    var id = elemento.id; // Obtengo el id del elemento
 
     const productoActual = DeterminarProductoPorId(id);
     const jsonString = JSON.stringify(productoActual);
     sessionStorage.setItem('ProductoActual', jsonString);
 
-    window.location.href = 'Producto.html'; // Redirigo al usuario a la pestaña individual de producto
+    window.location.href = 'Producto.html'; // llevo al usuario a la pestaña individual de producto
 }
 
 function DeterminarProductoPorId(id) {
@@ -55,7 +55,6 @@ function DeterminarProductoPorId(id) {
 }
 
 function CargarProductosDestacados(listaProductos) {
-    // Evaluo si esta aplicado algun filtro
     for(var producto of listaProductos) {
         if(producto.esDestacado == true) {
             AgregarProductoDestacado(producto);
@@ -64,42 +63,41 @@ function CargarProductosDestacados(listaProductos) {
 }
 
 function AgregarProductoDestacado(datosProducto) {
-    // Crear el enlace <a>
+    // Creo el enlace <a>
     var enlace = document.createElement("a");
     enlace.href = "Producto.html";
     enlace.className = "card-producto";
     enlace.id = datosProducto.id;
-    console.log(enlace.id);
 
-    // Crear el div <div class="col">
+    // Creo el div <div class="col">
     var divCol = document.createElement("div");
     divCol.className = "col";
 
-    // Crear el div <div class="card">
+    // Creo el div <div class="card">
     var divCard = document.createElement("div");
     divCard.className = "card";
 
-    // Crear la imagen <img>
+    // Creo la imagen <img>
     var imagen = document.createElement("img");
     imagen.src = datosProducto.imagen;
     imagen.className = "card-img-top";
     imagen.alt = datosProducto.nombre;
 
-    // Crear el div <div class="card-body">
+    // Creo el div <div class="card-body">
     var divCardBody = document.createElement("div");
     divCardBody.className = "card-body";
 
-    // Crear el título <h5>
+    // Creo el título <h5>
     var titulo = document.createElement("h5");
     titulo.className = "card-title";
     titulo.innerText = datosProducto.nombre;
 
-    // Crear el párrafo <p>
+    // Creo el párrafo <p>
     var parrafo = document.createElement("p");
     parrafo.className = "card-text";
-    parrafo.innerText = datosProducto.precio;
+    parrafo.innerText = "$" + datosProducto.precio;
 
-    // Anidar los elementos correctamente
+    // Anido los elementos
     divCardBody.appendChild(titulo);
     divCardBody.appendChild(parrafo);
     divCard.appendChild(imagen);
@@ -107,7 +105,7 @@ function AgregarProductoDestacado(datosProducto) {
     divCol.appendChild(divCard);
     enlace.appendChild(divCol);
 
-    // Agregar el nuevo elemento al contenedor
+    // Agrego el nuevo elemento al contenedor
     var contenedor = document.getElementById("contenedor-productos-destacados");
   
     contenedor.appendChild(enlace);

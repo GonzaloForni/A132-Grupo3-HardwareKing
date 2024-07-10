@@ -28,12 +28,6 @@
     text-align: start; /* Alinea el título "Productos" a la izquierda */
 }
 
-.boton-ordenar {
-    margin-bottom: 15px;
-    padding: 10px;
-    justify-content: end;
-}
-
 /* Asegurar que todas las cards tengan la misma altura */
 .card {
     height: 100%;
@@ -82,4 +76,10 @@
 
 .slider-container>li>img {
     border-radius: 10%;
+}
+
+.slider-marcas {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente, si el contenedor tiene una altura específica */
 }

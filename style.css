@@ -136,8 +136,7 @@ body {
 .botones-redes-footer {
     display: flex;
     text-align: end;
-    align-items: center;
-    /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
     justify-content: end;
 }
 
