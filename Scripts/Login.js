@@ -31,7 +31,13 @@ function ControllerIniciarSesion() {
                     // seteo ese usuario en la sesion actual (guardar correo, y un bool de si esta log)
                     sessionStorage.setItem(datosInicioSesion.correoElectronico, 'Logeado');
                 }
+                else {
+                    alert("La contraseña es incorrecta...");       
+                }
             }
+        }
+        else {
+            alert("El correo ingresado no esta registrado...");
         }
     }
 }
